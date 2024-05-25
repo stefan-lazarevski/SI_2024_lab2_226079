@@ -3,7 +3,7 @@
 ## Стефан Лазаревски, бр. на индекс 226079
 
 ###  Control Flow Graph
-
+![Control Flow Graph](./cfg.png)
 
 ### Цикломатска комплексност
 
