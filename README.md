@@ -14,16 +14,16 @@ x означува произволна вредности бидејќи про
 1: allItems == null, payment = x 
 Програмата ќе фрли new RuntimeException("allItems list can't be null!");
 
-2: allItems = [new Item("chicken", null, x, x)], payment = x
+2: allItems = [new Item("chicken", null, x, x)] , payment=x
 Програмата ќе фрли new RuntimeException("No barcode!");
 
-3: allItems = [new Item("chicken", "12l1", x, x)], payment = x
+3: allItems = [new Item("chicken", "12l1", x, x)] , payment=x
 Програмата ќе фрли new RuntimeException("Invalid character in item barcode!");
 
-4: Листата се содржи од: item1 =  ["chicken", "4505", 389, 0] и item2 =  ["potatoes", "9874", 100, 0], payment = 100
+4: Листата се содржи од: item1 = ["chicken", "4505", 389, 0] и item2 = ["potatoes", "9874", 100, 0] , payment=100
 Производите нема да имаат попуст и нивниот збир ќе е поголем од payment така што програмата ќе врати false.
 
-5: Листата се содржи од item1 =  ["chicken", "0505", 350, 0.25] и item2 =  ["null", "0874", 320, 0.1], payment=1000
+5: Листата се содржи од item1 = ["chicken", "0505", 350, 0.25] и item2 = ["null", "0874", 320, 0.1] , payment=1000
 Има производ со име null. Производите се со попуст, нивните цени се поголеми од 300 и во баркодот почнува со 0, нивниот збир ќе е пoмал од payment така што програмата ќе врати true.
 
 
